@@ -8,8 +8,8 @@
 #include "iostream"
 #include "string"
 #include "sstream"
-
-
+#include "packet.h"
+#include <queue>
 using namespace std;
 
 
@@ -22,4 +22,8 @@ public:
 	virtual int svc();
 
 	void AddTTask(ACE_Message_Block * bk);
+
+	void AddTask(Packet &t);
+private:
+	queue<Packet>	m_qMsg;
 };

@@ -15,17 +15,21 @@ class Server_svc_handler : public ACE_Svc_Handler<ACE_SOCK_STREAM, ACE_MT_SYNCH>
 {
 public:
 	Server_svc_handler();
+	~Server_svc_handler();
 
 	int open(void* );
 
 	int handle_input(ACE_HANDLE);
 
+	int Analyze();
+
+	void Send(ACE_Message_Block* pData);
 public:
-	char* data;
 	static const int DATA_SIZE;
 	int m_iConnect;
 
-	ACE_Message_Block*         m_pCurrMessage;                 //当前的MB对象
+	ACE_Message_Block*         m_pCurrMessage;                 //读出来的数据保持
+	ACE_Message_Block*         m_pRecvMessage;                 //读时候的临时对象
 };
 
 
@@ -36,6 +40,8 @@ public:
 	virtual int svc(void);
 
 	int AddConnect(Server_svc_handler* p);
+
+	void Send(int nConnectID, ACE_Message_Block* pData);
 private:
 	map<int, Server_svc_handler*> m_mConnectManager;
 

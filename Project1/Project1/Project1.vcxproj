@@ -70,13 +70,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CBuffPacket.cpp" />
     <ClCompile Include="ConnectAcceptor.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventHandlerPool.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="messageHandler.cpp" />
     <ClCompile Include="server.cpp" />
     <ClCompile Include="task.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CBuffPacket.h" />
     <ClInclude Include="ConnectAcceptor.h" />
+    <ClInclude Include="define.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventHandlerPool.h" />
+    <ClInclude Include="messageHandler.h" />
+    <ClInclude Include="packet.h" />
     <ClInclude Include="server.h" />
     <ClInclude Include="task.h" />
   </ItemGroup>

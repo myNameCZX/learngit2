@@ -1,21 +1,27 @@
-﻿生成启动时间为 2020/12/21 10:20:55。
-     1>项目“F:\Project\ace\Project1\Project1\Project1.vcxproj”在节点 2 上(Rebuild 个目标)。
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+﻿生成启动时间为 2020/12/22 17:08:25。
+     1>项目“F:\Project\ace\learngit2\Project1\Project1\Project1.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ConnectAcceptor.cpp main.cpp server.cpp task.cpp
-         task.cpp
-         server.cpp
-         main.cpp
-         ConnectAcceptor.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CBuffPacket.cpp Event.cpp EventHandlerPool.cpp main.cpp messageHandler.cpp task.cpp
+         CBuffPacket.cpp
          正在生成代码...
+         正在跳过...(未检测到相关更改)
+         task.cpp
+         messageHandler.cpp
+         main.cpp
+         EventHandlerPool.cpp
+         Event.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Project\ace\Project1\Debug\QQServer.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" aced.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Project\ace\Project1\Debug\QQServer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Project\ace\Project1\Debug\QQServer.lib" /MACHINE:X86 Debug\ConnectAcceptor.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Project\ace\learngit2\Project1\Debug\QQServer.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" aced.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Project\ace\learngit2\Project1\Debug\QQServer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Project\ace\learngit2\Project1\Debug\QQServer.lib" /MACHINE:X86 Debug\CBuffPacket.obj
+         Debug\ConnectAcceptor.obj
+         Debug\Event.obj
+         Debug\EventHandlerPool.obj
          Debug\main.obj
+         Debug\messageHandler.obj
          Debug\server.obj
          Debug\task.obj
-         Project1.vcxproj -> F:\Project\ace\Project1\Debug\QQServer.exe
-     1>已完成生成项目“F:\Project\ace\Project1\Project1\Project1.vcxproj”(Rebuild 个目标)的操作。
+         Project1.vcxproj -> F:\Project\ace\learngit2\Project1\Debug\QQServer.exe
+     1>已完成生成项目“F:\Project\ace\learngit2\Project1\Project1\Project1.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:05.39
+已用时间 00:00:01.12
