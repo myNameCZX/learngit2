@@ -4,7 +4,6 @@
 #include <ace/SOCK_Acceptor.h> 
 #include <ace/Acceptor.h>
 #include <ace/Svc_Handler.h>
-#include <ace/ace.h>
 #include "server.h"
 #include "task.h"
 #include "ConnectAcceptor.h"
